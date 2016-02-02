@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Vancouver Public Art?</title>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div id="mainview">
+		<div id="logoheader">
+			<img id="logo" src="images/VanArtLogo_02.jpg" alt="Vancouver Public Art?"/>
+			<img id="logoLong" src="images/VanArtLogo_Long.jpg" alt="Vancouver Public Art?" onclick="refresh()"/>
+			<div id="nav">
+			<a href="index.html"><img class="navicons" alt="home" src="images/nav/home.png"/></a>
+			<a href="form.html"><img class="navicons" alt="subform" src="images/nav/email.png"/></a>
+			</div>
+		</div>
+
+		<div id="menu">
+			<div class="menu" id="Vancouver"><h1 id="vanTitle">Vancouver</h1></div>
+			<div class="menu" id="Richmond"><h1 id="rmdTitle">Richmond</h1></div>
+			<div class="menu" id="NorthShore"><h1 id="northTitle">North Shore</h1></div>
+			<div class="menu" id="Other"><h1 id="otherTitle">Other Locations</h1></div>
+		</div>
+
+		<div id="vanResults">
+			<div class="results" id="vanResults1"><h2>Human Structures Vancouver</h2></div>
+				<div class="info" id="vanInfo1">
+					<div class="col-1">
+						<img class="artist" alt="Jonathan Borofsky" src="images/artists/Jonathan-Borofsky.jpg"/>
+						<br/>
+						<h3>Jonathan Borofsky</h3><img class="flag" alt="USA" src="images/flags/USA.png">
+					</div>
+					<div class="col-2">
+						<img class="loc" src="images/nav/media.png" alt="media"/> <h4>Painted and molded gavanized steel</h4>
+						<br/>
+						<a href="http://www.vancouverbiennale.com/artworks/human-structures-64-figures-connected/" target="_blank"><img class="readmore" alt="read more" src="images/nav/ReadMore.png"/></a>
+				
+					</div>
+					<div class="col-3">
+						<a href="https://goo.gl/maps/45ks4" target="_blank"><img class="loc" src="images/nav/map.png" alt="map"/></a>
+						<br/>
+						<h3>Hinge Park</h3><h4>Vancouver</h4>
+						<br/>
+						<a href="http://www.facebook.com" target="_blank"><img class="navicons" src="images/nav/facebook.png" alt="facebook"></a>
+						<a href="http://www.twitter.com" target="_blank"><img class="navicons" src="images/nav/twitter.png" alt="twitter"/></a>
+						<a href="http://www.pinterest.com" target="_blank"><img class="navicons" src="images/nav/pinterest.png" alt="pinterest"/></a>		
+					</div>			
+				</div>
+
+			<div class="results" id="vanResults2"><h2>Giants</h2></div>
+			<div class="info" id="vanInfo2">
+				<div class="col-1">
+					<img class="artist" alt="Os Gemeos" src="images/artists/OSGEMEOS.jpg"/>
+					<br/>
+					<h3>OsGemeos</h3><img class="flag" alt="Brazil" src="images/flags/Brazil.png"/>
+				</div>
+				<div class="col-2">
+					<img class="loc" src="images/nav/media.png" alt="media"/> <h4>Painted on all sides of six gigantic silos</h4>
+					<br/>
+					<a href="http://www.vancouverbiennale.com/artworks/giants/" target="_blank"><img class="readmore" alt="read more" src="images/nav/ReadMore.png"/></a>
+
+				</div>
+				<div class="col-3">
+					<a href="https://goo.gl/maps/MHMdi" target="_blank"><img class="loc" src="images/nav/map.png" alt="map"/></a>
+					<br/>
+					<h3>Granville Island</h3><h4>Vancouver</h4>
+					<a href="http://www.facebook.com" target="_blank"><img class="navicons" src="images/nav/facebook.png" alt="facebook"/></a>
+					<a href="http://www.twitter.com" target="_blank"><img class="navicons" src="images/nav/twitter.png" alt="twitter"/></a>
+					<a href="http://www.pinterest.com" target="_blank"><img class="navicons" src="images/nav/pinterest.png" alt="pinterest"/></a>
+				</div>
+			</div>
+			
+			<div class="results" id="vanResults3"><h2>Trans Am Totem</h2></div>
+			<div class="info" id="vanInfo3">
+				<div class="col-1">
+					<img class="artist" alt="Marcus Bowcott" src="images/artists/Marcus-Bowcott.jpg"/>
+					<br/>
+					<h3>Marcus Bowcott</h3><img alt="Canada" class="flag" src="images/flags/Canada.png">
+				</div>
+				<div class="col-2">
+					<img class="loc" src="images/nav/media.png" alt="media"/> <h4>5 scrap cars and a cedar tree</h4>
+					<br/>
+					<a href="http://www.vancouverbiennale.com/artworks/trans-am-totem/" target="_blank"><img class="readmore" alt="read more" src="images/nav/ReadMore.png"/></a>
+				</div>
+				<div class="col-3">
+					<a href="https://goo.gl/maps/EnBe6" target="_blank"><img class="loc" src="images/nav/map.png" alt="map"/></a>
+					<br/>
+					<h3>Quebec St & Milross Av</h3><h4>Vancouver</h4>
+					<br/>
+					<a href="http://www.facebook.com" target="_blank"><img class="navicons" src="images/nav/facebook.png" alt="facebook"/></a>
+					<a href="http://www.twitter.com" target="_blank"><img class="navicons" src="images/nav/twitter.png" alt="twitter"/></a>
+					<a href="http://www.pinterest.com" target="_blank"><img class="navicons" src="images/nav/pinterest.png" alt="pinterest"/></a>
+				</div>
+			</div>
+
+			<div class="results" id="vanResults4"><h2>Engagement</h2></div>
+			<div class="info" id="vanInfo4">
+				<div class="col-1">
+					<img class="artist" alt="Dennis Oppenheim" src="images/artists/dennis-oppenheim.jpg"/>
+					<br/>
+					<h3>Dennis Oppenheim</h3><img class="flag" alt="USA" src="images/flags/USA.png">
+				</div>
+				<div class="col-2">
+					<img class="loc" src="images/nav/media.png" alt="media"/> <h4>Painted Aluminum, Steel, Glass</h4>
+					
+					<br/>
+					<a href="http://www.vancouverbiennale.com/artworks/engagement/" target="_blank"><img class="readmore" alt="read more" src="images/nav/ReadMore.png"/></a>				</div>
+				<div class="col-3">
+					<a href="https://goo.gl/maps/nbGX9" target="_blank"><img class="loc" src="images/nav/map.png" alt="map"/></a>
+					<br/>
+					<h3>Sunset Beach Park</h3><h4>Vancouver</h4>
+					<br/>
+					<a href="http://www.facebook.com" target="_blank"><img class="navicons" src="images/nav/facebook.png" alt="facebook"/></a>
+					<a href="http://www.twitter.com" target="_blank"><img class="navicons" src="images/nav/twitter.png" alt="twitter"/></a>
+					<a href="http://www.pinterest.com" target="_blank"><img class="navicons" src="images/nav/pinterest.png" alt="pinterest"/></a>
+				</div>
+			</div>
+			<div class="results" id="vanResults5"><h2>A-maze-ing Laughter</h2></div>
+			<div class="info" id="vanInfo5">
+				<div class="col-1">
+					<img class="artist" alt="Yue Minjun" src="images/artists/Yue-Minjun.jpg"/>
+					<br/>
+					<h3>Yue Minjun</h3><img class="flag" alt="China" src="images/flags/China.png">
+				</div>
+				<div class="col-2">
+					<img class="loc" src="images/nav/media.png" alt="media"/> <h4>Painted Bronze</h4>
+					<br/>
+					<a href="http://www.vancouverbiennale.com/artworks/a-maze-ing-laughter/" target="_blank"><img class="readmore" alt="read more" src="images/nav/ReadMore.png"/></a></div>
+				<div class="col-3">
+					<a href="https://goo.gl/maps/VRKTO" target="_blank"><img class="loc" src="images/nav/map.png" alt="map"/></a>
+					<br/>
+					<h3>Morton Park (Triangle)</h3><h4>Vancouver</h4>
+					<br/>
+					<a href="http://www.facebook.com" target="_blank"><img class="navicons" src="images/nav/facebook.png" alt="facebook"/></a>
+					<a href="http://www.twitter.com" target="_blank"><img class="navicons" src="images/nav/twitter.png" alt="twitter"/></a>
+					<a href="http://www.pinterest.com" target="_blank"><img class="navicons" src="images/nav/pinterest.png" alt="pinterest"/></a>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="rmdResults">
+			<div class="results" id="rmdResults1"><h2>Water #10</h2></div>
+			<div class="info" id="rmdInfo1">
+				<div class="col-1">
+				<img class="artist" alt="Ren Jun" src="images/artists/ren-jun.jpg"/>
+				<br/>
+				<h3>Ren Jun</h3><img class="flag" alt="China" src="images/flags/China.png">
+			</div>
+			<div class="col-2">
+				<img class="loc" src="images/nav/media.png" alt="media"/> <h4>Stainless steel sculptures</h4>
+				<br/>
+				<a href="http://www.vancouverbiennale.com/artworks/water-10/" target="_blank"><img class="readmore" alt="read more" src="images/nav/ReadMore.png"/></a>
+			</div>
+			<div class="col-3">
+				<a href="https://goo.gl/maps/MrEb2" target="_blank"><img class="loc" src="images/nav/map.png" alt="map"/></a>
+				<br/>
+				<h3>Cambie Plaza</h3><h4>Richmond</h4>
+				<br/>
+				<a href="http://www.facebook.com" target="_blank"><img class="navicons" src="images/nav/facebook.png" alt="facebook"/></a>
+				<a href="http://www.twitter.com" target="_blank"><img class="navicons" src="images/nav/twitter.png" alt="twitter"/></a>
+				<a href="http://www.pinterest.com" target="_blank"><img class="navicons" src="images/nav/pinterest.png" alt="pinterest"/></a>
+			</div>
+			</div>
+			<div class="results" id="rmdResults2"><h2>Water Sky Garden</h2></div>
+			<div class="info" id="rmdInfo2">
+				<div class="col-1">
+					<img class="artist" alt="Janet Echelman" src="images/artists/Janet-Echelman.jpg"/>
+					<br/>
+					<h3>Janet Echelman</h3><img class="flag" alt="USA" src="images/flags/USA.png">
+				</div>
+				<div class="col-2">
+					<img class="loc" src="images/nav/media.png" alt="media"/> <h4>Painted galvanized steel rings with a TENARA architectural fiber netting</h4>
+					
+					<a href="http://www.echelman.com/project/water-sky-garden/" target="_blank"><img class="readmore" alt="read more" src="images/nav/ReadMore.png"/></a>
+				</div>
+				<div class="col-3">
+					<a href="https://goo.gl/maps/dPvHr" target="_blank"><img class="loc" src="images/nav/map.png" alt="map"/></a>
+					<br/>
+					<h3>Olympic Oval Precinct</h3><h4>Richmond</h4>
+					<br/>
+					<a href="http://www.facebook.com" target="_blank"><img class="navicons" src="images/nav/facebook.png" alt="facebook"/></a>
+					<a href="http://www.twitter.com" target="_blank"><img class="navicons" src="images/nav/twitter.png" alt="twitter"/></a>
+					<a href="http://www.pinterest.com" target="_blank"><img class="navicons" src="images/nav/pinterest.png" alt="pinterest"/></a>
+				</div>
+			</div>
+			<div class="results" id="rmdResults3"><h2>Hupakwanum: The Chief's Treasure Box</h2></div>
+			<div class="info" id="rmdInfo3" style="height:210px;">
+				<div class="col-1">
+					<img class="artist" alt="Patrick Amos, Tim Paul, Tom Paul, Rodney Sayers" src="images/artists/Artists.png"/>
+					<br/>
+					<h3>Patrick Amos, Tim Paul, Tom Paul, Rodney Sayers</h3><img class="flag" alt="Canada" src="images/flags/Canada.png">
+				</div>
+				<div class="col-2">
+					<img class="loc" src="images/nav/media.png" alt="media"/> <h4>Wood, glass and LED lights</h4>				
+					<br/><br/>
+					<a href="http://www.richmond.ca/culture/publicart/collection/PublicArt.aspx?ID=109" target="_blank"><img class="readmore" alt="read more" src="images/nav/ReadMore.png"/></a>
+				</div>
+				<div class="col-3">
+					<a href="https://goo.gl/maps/Mr4zG" target="_blank"><img class="loc" src="images/nav/map.png" alt="map"/></a>
+					<br/>
+					<h3>Olympic Oval Precinct</h3><h4>Richmond</h4>
+					<br/>
+					<a href="http://www.facebook.com" target="_blank"><img class="navicons" src="images/nav/facebook.png" alt="facebook"/></a>
+					<a href="http://www.twitter.com" target="_blank"><img class="navicons" src="images/nav/twitter.png" alt="twitter"/></a>
+					<a href="http://www.pinterest.com" target="_blank"><img class="navicons" src="images/nav/pinterest.png" alt="pinterest"/></a>
+				</div>
+			</div>
+		</div>
+
+		<div id="northResults">
+			<div class="results" id="northResults1"><h2>The Meeting</h2></div>
+			<div class="info" id="northInfo1">
+				<div class="col-1">
+				<img class="artist" alt="Wang Shugang" src="images/artists/Wang-Shugang.jpg"/>
+				<br/>
+				<h3>Wang Shugang</h3><img class="flag" alt="China" src="images/flags/China.png">
+				</div>
+				<div class="col-2">
+					<img class="loc" src="images/nav/media.png" alt="media"/> <h4>Painted Bronze Figures</h4>
+					
+					<br/>
+					<a href="http://www.vancouverbiennale.com/artworks/the-meeting/" target="_blank"><img class="readmore" alt="read more" src="images/nav/ReadMore.png"/></a>
+				</div>
+				<div class="col-3">
+					<a href="https://goo.gl/maps/JjHws" target="_blank"><img class="loc" src="images/nav/map.png" alt="map"/></a>
+					<br/>
+					<h3>Ray Sargent Park</h3><h4>North Vancouver</h4>
+					<br/>
+					<a href="http://www.facebook.com" target="_blank"><img class="navicons" src="images/nav/facebook.png" alt="facebook"/></a>
+					<a href="http://www.twitter.com" target="_blank"><img class="navicons" src="images/nav/twitter.png" alt="twitter"/></a>
+					<a href="http://www.pinterest.com" target="_blank"><img class="navicons" src="images/nav/pinterest.png" alt="pinterest"/></a>
+				</div>
+			</div>
+
+			<div class="results" id="northResults2"><h2>Walking Figures</h2></div>
+			<div class="info" id="northInfo2" style="height:190px;">
+				<div class="col-1">
+					<img class="artist" alt="Magdalena Abakanowicz" src="images/artists/Magdalena-Abakanowicz.jpg"/>
+					<br/>
+					<h3>Magdalena Abakanowicz</h3><img class="flag" alt="Poland" src="images/flags/Poland.png">
+				</div>
+				<div class="col-2">
+					<img class="loc" src="images/nav/media.png" alt="media"/> <h4>Cast Iron Figures</h4>
+					
+					<br/>
+					<a href="http://www.vancouverbiennale.com/artworks/walking-figures-north-vancouver/" target="_blank"><img class="readmore" alt="read more" src="images/nav/ReadMore.png"/></a>
+				</div>
+				<div class="col-3">
+					<a href="https://goo.gl/maps/IB1qO4" target="_blank"><img class="loc" src="images/nav/map.png" alt="map"/></a>
+					<br/>
+					<h3>Lonsdale Av & 13th St</h3><h4>North Vancouver</h4>
+					<br/>
+					<a href="http://www.facebook.com" target="_blank"><img class="navicons" src="images/nav/facebook.png" alt="facebook"/></a>
+					<a href="http://www.twitter.com" target="_blank"><img class="navicons" src="images/nav/twitter.png" alt="twitter"/></a>
+					<a href="http://www.pinterest.com" target="_blank"><img class="navicons" src="images/nav/pinterest.png" alt="pinterest"/></a>
+				</div>
+			</div>
+		</div>			
+
+		<div id="otherResults">
+			<div class="results" id="otherResults1"><h2>I Have a Dream - Community Project
+				<br/>(coming soon)</h2></div>
+			<div class="info" id="otherInfo1">
+				<div class="col-1">
+					<img class="artist" alt="Sweta Bhattad" src="images/artists/Shweta-Bhattad.jpg"/>
+					<br/>
+					<h3>Shweta Bhattad</h3><img class="flag" alt="India" src="images/flags/India.png">
+				</div>
+				<div class="col-2">
+					<img class="loc" src="images/nav/media.png" alt="media"/> <h4>Sow fields or grow gardens</h4>
+					<br/>
+					<a href="http://www.vancouverbiennale.com/artworks/i-have-a-dream-community-project/" target="_blank"><img class="readmore" alt="read more" src="images/nav/ReadMore.png"/></a>
+				</div>
+				<div class="col-3">
+					<a href="https://goo.gl/maps/ID58u" target="_blank"><img class="loc" src="images/nav/map.png" alt="map"/></a>
+					<br/>
+					<h3>District Education Centre</h3><h4>Surrey</h4>
+					<a href="http://www.facebook.com" target="_blank"><img class="navicons" src="images/nav/facebook.png" alt="facebook"/></a>
+					<a href="http://www.twitter.com" target="_blank"><img class="navicons" src="images/nav/twitter.png" alt="twitter"/></a>
+					<a href="http://www.pinterest.com" target="_blank"><img class="navicons" src="images/nav/pinterest.png" alt="pinterest"/></a>
+				</div>
+			</div>
+			<div class="results" id="otherResults2"><h2>Unititled</h2></div>
+				<div class="info" id="otherInfo2">
+					<div class="col-1">
+						<img class="artist" alt="Vik Muniz" src="images/artists/Vik-Muniz.jpg"/>
+						<br/>
+						<h3>Vik Muniz</h3><img class="flag" alt="Brazil" src="images/flags/Brazil.png">
+					</div>
+					<div class="col-2">
+						<img class="loc" src="images/nav/media.png" alt="media"/> <h4>Rocks, logs and wood chips</h4>						
+						<br/>
+						<a href="http://www.vancouverbiennale.com/artworks/untitled-10/" target="_blank"><img class="readmore" alt="read more" src="images/nav/ReadMore.png"/></a>
+					</div>
+					<div class="col-3">
+						<a href="https://goo.gl/maps/ruLm5" target="_blank"><img class="loc" src="images/nav/map.png" alt="map"/></a>
+						<br/>
+						<h3>Victoria St at Loggers Ln</h3><h4>Squamish</h4>
+						
+						<a href="http://www.facebook.com" target="_blank"><img class="navicons" src="images/nav/facebook.png" alt="facebook"/></a>
+						<a href="http://www.twitter.com" target="_blank"><img class="navicons" src="images/nav/twitter.png" alt="twitter"/></a>
+						<a href="http://www.pinterest.com" target="_blank"><img class="navicons" src="images/nav/pinterest.png" alt="pinterest"/></a>
+					</div>
+				</div>
+			<div class="results" id="otherResults3"><h2>Raincatcher</h2></div>
+			<div class="info" id="otherInfo3">
+				<div class="col-1">
+					<img class="artist" alt="Noel Harding" src="images/artists/Noel-Harding.jpg"/>
+					<br/>
+					<h3>Noel Harding</h3><img class="flag" alt="Canada" src="images/flags/Canada.png">
+				</div>
+				<div class="col-2">
+					<img class="loc" src="images/nav/media.png" alt="media"/> <h4>Abstract canopy of metal foliage</h4>
+					<br/>
+					<a href="http://www.burnaby.ca/Things-To-Do/Community-Centres/Edmonds-Community-Centre/Public-Art.html?PageMode=Print" target="_blank"><img class="readmore" alt="read more" src="images/nav/ReadMore.png"/></a>
+				</div>
+				<div class="col-3">
+					<a href="https://goo.gl/maps/8kr1X" target="_blank"><img class="loc" src="images/nav/map.png" alt="map"/></a>
+					<br/>
+					<h3>Edmonds Community Centre</h3><h4>Burnaby</h4>
+					
+					<a href="http://www.facebook.com" target="_blank"><img class="navicons" src="images/nav/facebook.png" alt="facebook"/></a>
+					<a href="http://www.twitter.com" target="_blank"><img class="navicons" src="images/nav/twitter.png" alt="twitter"/></a>
+					<a href="http://www.pinterest.com" target="_blank"><img class="navicons" src="images/nav/pinterest.png" alt="pinterest"/></a>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>

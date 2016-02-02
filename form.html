@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Subscription Form</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="formstyle.css" />  
+  </head>
+  <body>
+    <div id="container">
+      <h1>Subscribe to the Vancouver Tourism Newsletter!</h1>
+
+      <form id="subform">
+        <fieldset>
+
+
+          <label for="firstName">First Name: </label>
+          <input id="firstName" type="text"  value="" name="firstName" placeholder="First Name" autofocus required pattern="[a-z,A-Z]{3,20}" oninput="checkFirstName(this);"/><br/><br/>
+         
+          <label for="lastName">Last Name: </label>
+          <input id="lastName" type="text" value="" name="lastName" placeholder="Last Name" required pattern="[a-z,A-Z]{3,20}" oninput="checkLastName(this);"/><br/><br/>
+
+          <label for="email">Email: </label>
+          <input id="email" type="email" value="" name="email" placeholder="Ex. abc@def.com" 
+            oninput="checkEmail(this);" required/><br/><br/>
+
+          <p class="check"><input type="checkbox" name="consent" value="consent" required/> 
+          Subscribe to stay updated with Vancouver Tourism news!</p>
+          <br/>
+          <p class="check"><input type="checkbox" name="consent" value="consent" required/> I hereby agree to accept the following <a id="terms">Terms and Conditions</a><br/></p>          
+
+          
+          
+          <div id="TnC" title="Terms and Agreements">
+          <h4>Terms and conditions for Vancouver Tourism Newsletter:</h4>
+          <p>We will not sell, distribute, barter, or transfer any of your personally identifiable information to companies, organizations or other parties outside of Vancouver Tourism and its subsidiaries (i.e. OUR WEBSITES) without your permission.</p>
+          </div>
+
+          <a href="index.html"><img class="back" alt="back" src="images/formimage/BackToApp.png"/></a>
+          <input type="submit" id="submit" value="submit it!"/>
+         
+          <!--<a id="submit" href="" type="submit" /><img id="submit" src="images/formimage/submitbutton.png"/>
+          </a> -->
+          <!--<input id="submit" type="submit" value="Submit"/>-->
+        </fieldset>
+        
+      </form>
+
+    </div>
+
+    <div id="suggestion">
+      <h1>Check out our other Vancouver Tourism Apps!</h1><br/>
+      <a href="index.html"><img class="back" alt="back to app" src="images/formimage/BackToApp.png"/></a>
+      <a href="form.html"><img class="back" alt="back to form" src="images/formimage/BackToForm.png"/></a>
+      <img id="apps" alt="go" src="images/formimage/go.png">
+    
+    </div>
+    
+    <table id="appsResults"></table>
+
+ 
+<!--linking javascript files-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src="formscript.js"></script>
+
+  </body>
+</html>

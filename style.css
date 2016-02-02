@@ -1,0 +1,513 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+body{
+	background-image:url("images/WoodenTextureBG_Sm.jpg");
+    background-attachment: fixed;
+    margin:0;
+	width:100vw;
+	height:100vh;
+	font-family: "Ubuntu", san-serif;
+}
+#mainview{
+	display:block;
+	width:100vw;
+	height:100vh;
+	background-color:rgba(255,255,255, 0.5);
+}
+#logoheader{
+	background-color: #fff;
+	width:400px;
+	height:auto;
+	display:block;
+}
+#logo{
+	width:60%;
+	height:auto;
+	margin-left:15%;
+	margin-right:20%;
+}
+#logoLong{
+	display:none;
+	width:auto;
+	height:35px;
+	margin:5px 10px 0px 10px;
+	cursor:pointer;
+}
+#nav{
+	display:none;
+	float:right;
+	clear:none;
+	padding-top:5px;
+	padding-bottom: 5px;
+	background-color:#fff;
+}
+p{
+	margin:0;
+}
+.artist{
+	border-radius:50%;
+	width:auto;
+	height:100px;
+	margin-left:15%;
+	margin-right:15%;	
+}
+
+.col-1{
+	display:inline-block;
+	width:33%;
+	height:auto;
+	float:left;
+	clear:none;
+	padding-top:3px;
+}
+.col-2{
+	display:inline-block;
+	width:34%;
+	float:right;
+	height:auto;
+	text-align: center;
+	padding-top:5px;
+}
+.col-3{
+	display:inline-block;
+	width:33%;
+	height:auto;
+	clear:none;
+	text-align: center;
+	padding-top:5px;
+}
+#refresh{
+	float:right;
+	clear:none;
+	display:none;
+	margin:5px;
+}
+#vanResults{
+	display:none;
+}
+#vanResults1{
+	background-image:url("images/VanArt/borofsky_humanstructure01.jpg");
+	background-size: 100% auto;
+}
+#vanResults2{
+	background-image:url("images/VanArt/osgemeos_giants01.jpg");
+	background-size:  100% auto;
+}
+#vanResults3{
+	background-image:url("images/VanArt/bowcott_transamtotem01.jpg");
+	background-size:  100% auto;
+}
+#vanResults4{
+	background-image:url("images/VanArt/engagement2.jpg");
+	background-size:  100% auto;
+	background-position: bottom;
+}
+#vanResults5{
+	background-image:url("images/VanArt/yue_a-maze-ing-laughter.jpg");
+	background-size:  100% auto;
+	background-position: center;
+}
+#rmdResults{
+	display:none;
+}
+#rmdResults1{
+	background-image:url("images/RmdArt/water02.jpg");
+	background-size: 100% auto;
+		background-position: center;
+
+}
+#rmdResults2{
+	background-image:url("images/RmdArt/echelman02.jpg");
+	background-size:  100% auto;
+}
+#rmdResults3{
+	background-image:url("images/RmdArt/Hupakwanum02.jpg");
+	background-size:  100% auto;
+		background-position: center;
+
+}
+#northResults{
+	display:none;
+}
+#northResults1{
+	background-image:url("images/NorthArt/meeting03.png");
+	background-size: 100% auto;
+}
+#northResults2{
+	background-image:url("images/NorthArt/walking01.jpg");
+	background-size:  100% auto;
+		background-position: bottom;
+
+}
+#otherResults{
+	display:none;
+}
+#otherResults1{
+	background-image:url("images/OtherArt/ihaveadream01.jpg");
+	background-size: 100% auto;
+		background-position: center;
+
+}
+#otherResults2{
+	background-image:url("images/OtherArt/wolf01.jpg");
+	background-size:  100% auto;
+		background-position: bottom;
+
+}
+#otherResults3{
+	background-image:url("images/OtherArt/raincatcher01.jpg");
+	background-size:  100% auto;
+}
+h1{
+	padding-top:30vh;
+	color:rgba(255, 255, 255, 0.8);
+	text-shadow: 2px 2px #000;
+	font-size:28px;
+	text-align:center;
+}
+#menu{
+	width:100%;
+	height:auto;
+}
+.menu{
+	width:100%;
+	border: 0;
+	overflow: hidden;
+	font-size: 18px;
+	border-radius: 3px;
+	position: relative;
+	cursor:pointer;
+}
+
+.menu:after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.1);
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+.menu:hover:after {
+	-webkit-transform: translate(100%,0);
+	transform: translate(100%,0);
+  	background: rgba(0,0,0,0);
+}
+#Vancouver{
+	display:inline-block;
+	height:40vh;
+	width:49%;
+	background-image:url("images/VanArt/digitalorca.jpg");
+	background-size: auto 100%;
+	background-position:right;
+}
+#Richmond{
+	display:inline-block;
+	height:40vh;
+	width:50%;
+	background-image:url("images/RmdArt/water02.jpg");
+	background-size: auto 100%;
+	background-position:left;
+}
+
+#NorthShore{
+	display:inline-block;
+	height:40vh;
+	margin:0px;
+	width:49%;
+	background-image:url("images/NorthArt/meeting03.png");
+	background-size: auto 100%;
+	background-position:center;
+}
+
+#Other{
+	display:inline-block;
+	margin-top:0px;
+	height:40vh;
+	width:50%;
+	background-image:url("images/OtherArt/raincatcher01.jpg");
+	background-size: auto 100%;
+	background-position:right;
+}
+.results{
+	height:35vh;
+	width:100vw;
+	background-color:#85E0E0;
+	cursor:pointer;
+	margin-bottom:3px;
+}
+h2{
+	padding-top:25vh;
+	margin:0;
+	color:#fff;
+	text-align:right;
+	font-size:24px;
+	text-shadow: 2px 2px #000;
+}
+.info{
+	height:150px;
+	width:100vw;
+	background-color:rgba(255, 255, 255, 0.85);
+	display:none;
+}
+#locDisplay{
+	display:none;
+	margin-left:10px;
+}
+.loc{
+	width:auto;
+	height:80px;
+	float:right;
+	margin:0 25% 5px 25%;
+}
+.flag{
+	width:50px;
+	height:auto;
+	margin-left:35%;
+}
+#location{
+	float:right;
+	display:block;
+	margin-right:10px;
+}
+
+h3{
+	margin:0;
+	color:#3D1F00;
+	text-align:center;
+	display:block;
+}
+h4{
+	margin:0;
+	color:#8B5A2B;
+	text-align:center;
+	display:block;
+}
+#logoheader{
+	background-color: #fff;
+	width:100%;
+	height:auto;
+	display:block;
+}
+
+@media (min-width: 410px){
+
+#nav{
+	display:inline-block;
+}	
+
+.readmore{
+	width:120px;
+	height:auto;
+	margin-left:15%;
+	margin-right:15%;
+}
+.loc{
+	padding-top:0;
+}
+.info{
+	height:200px;
+	width:100vw;
+	background-color:rgba(255, 255, 255, 0.85);
+	display:none;
+}
+.col-1, .col-2, .col-3{
+	padding-top:4%;
+}
+#logo{
+	max-height:150px;
+	width:auto;
+}
+}
+
+@media (max-width: 600px) {
+.navicons{
+	display:none;
+	width:20px;
+	height:auto;
+	margin:0 15px 5px 7px;
+}
+#logoLong{
+	display:none;
+	width:300px;
+	height:auto;
+	margin-left:10px;
+	margin-right:10px;
+	cursor:pointer;
+}
+#nav{
+	display:inline-block;
+}	
+.artist{
+	border-radius:50%;
+	width:auto;
+	height:100px;
+	margin-left:25%;
+	margin-right:15%;	
+}
+.readmore{
+	width:120px;
+	height:auto;
+}
+.col-1, .col-2, .col-3{
+	padding-top:2%;
+}
+#logo{
+	max-height:150px;
+	width:auto;
+}
+}
+@media (min-width: 600px) {
+.navicons{
+	display:none;
+	width:25px;
+	height:auto;
+	margin:0 20px 5px 10px;
+}
+.results{
+	height:50vh;
+	width:100vw;
+}
+h2{
+	font-size:32px;
+	padding-top:30vh;
+}
+h3{
+	font-size:20px;
+}
+h4{
+	font-size:16px;
+}
+#logoLong{
+	display:none;
+	width:auto;
+	height:50px;
+	margin:5px 10px 0px 10px;
+	cursor:pointer;
+}
+.artist{
+	border-radius:50%;
+	width:auto;
+	height:130px;
+	margin-left:30%;
+	margin-right:10%;	
+}
+.info{
+	height:230px;
+}
+
+.flag{
+	width:50px;
+	height:auto;
+	margin-left:40%;
+}
+.readmore{
+	width:140px;
+	height:auto;
+	margin-left:15%;
+	margin-right:20%;
+}
+.loc{
+	width:auto;
+	height:90px;
+	float:right;
+	margin:0 30% 10px 30%;
+}
+
+.col-1, .col-2, .col-3{
+	padding-top:2%;
+}
+#logo{
+	max-height:150px;
+	width:auto;
+	margin-left:30%;
+}
+}
+@media (min-width:960px){
+.readmore{
+	width:150px;
+	height:auto;
+	margin-left:25%;
+	margin-right:25%;
+}
+
+.col-1{
+
+	padding-top:15px;
+}
+.col-2{
+
+	padding-top:10px;
+}
+.col-3{
+	width:28%;
+	padding-top:20px;
+	padding-left:5%;
+}
+.artist{
+	margin-left:35%;
+	margin-right:auto;	
+}
+.loc{
+	width:auto;
+	height:100px;
+	float:right;
+	margin:0 25% 15px 25%;
+}
+#logo{
+	max-height:150px;
+	width:auto;
+	margin-left:40%;
+}
+}
+@media (max-width: 410px){
+	#mainview, #logoheader, #menu, .results, .info, {
+		min-width:400px;
+	}
+	.col-1, .col-2{
+		display:none;
+	}
+	.col-3{
+		width:100vw;
+	}
+	.info{
+		height:110px;
+	}
+	.results{
+		background-size:cover;
+		height:180px;
+	}
+	h2{
+		padding-top:120px;
+	}
+	#nav{
+		display:block;
+		float:left;
+	}
+#logoheader{
+	height:70px;
+}
+#logo{
+	height:70px;
+	width:auto;
+	margin:0;
+	float:right;
+}
+#logoLong{
+	width:200px;
+	margin-right:30%;
+}
+.loc{
+	margin:0;
+	width:60px;
+	height:auto;
+}
+.menu, #Vancouver, #Richmond, #NorthShore, #Other{
+	width:100%;
+	height:200px;
+}
+h1{
+	padding-top:100px;
+}
+}

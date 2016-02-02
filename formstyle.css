@@ -1,0 +1,242 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+body{
+  background-color:white; 
+  background-image:url("images/WoodenTextureBG_Sm.jpg");
+  margin:0;
+  padding:10px;
+  font-family: "Ubuntu", san-serif;
+  color:#3D1F00;
+}
+#suggestion {
+  display:none;
+  text-align: center;
+}
+#appsResults{
+  display:none;
+  text-align: center;
+}
+#apps{
+  margin-left:5%;
+  width:auto;
+  height:40px;
+  cursor:pointer;
+}
+#download{
+  width:100px;
+}
+.applogos{
+  width:auto;
+  height:100px;
+  margin:20px;
+}
+#appstore{
+  margin:20px;
+}
+input {
+	border: solid 1px;
+	padding: 2px;
+}
+label{
+	text-align: right;
+}
+h1 {
+  margin:0;
+	text-align: center;
+	text-shadow: 2px 2px 2px #eee;
+  color:#3D1F00;
+  font-size:28px;
+}
+td{
+  font-size:24px;
+  color:#990000;
+}
+#TnC{
+  display:none;
+  background-color:#fff;
+  margin-left:10%;
+  margin-right:10%;
+  color:#333;
+}
+#terms{
+  color:#009933;
+  cursor:pointer;
+}
+.back{
+  display:inline-block;
+  margin-top: 5px;
+  margin-left:5%;
+  height: 40px;
+  cursor:pointer;
+}
+#submit {
+  display:inline-block;
+  margin-top: 5px;
+  float:right;
+  width: 130px;
+  cursor:pointer;
+}
+.check{
+  margin:0;
+}
+
+@media (max-width: 550px) {
+  label, input {
+        display: inline-block;
+        font-size: 11pt;
+        font-family: Sans-serif;
+      }
+
+  label {
+    width: 30%;
+    padding: 2px;
+  }
+
+  label + input {
+    width: 50%;
+    padding: 3px;
+    margin: 0 3% 0 3%;
+  }
+  h1{
+    font-size:18px;
+  }
+  fieldset {
+    margin: 5px; padding:10px; auto;
+  }
+  .applogos{
+    width:auto;
+    height:80px;
+    margin:10px 0 10px 0;
+  }
+  #container, #suggestion, #appsResults{
+    width: 90%;
+    height:auto;
+    margin:2% auto;
+    padding:5px;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 3px 3px 3px #888888;
+    float:auto;
+    clear:auto;
+    color:#333;
+    font-size:1em;
+  }
+  #submit{
+    margin-top:3px;
+    width:80px;
+  }
+  .back{
+    width:auto;
+    height:30px;
+  }
+  #apps{
+    margin-left:5%;
+    width:auto;
+    height:40px;
+    cursor:pointer;
+  }
+  #download{
+    margin:0;
+  }
+  #appstore{
+    margin:0;
+  }
+}
+
+
+@media (min-width: 550px) {
+  label, input {
+        display: inline-block;
+        font-size: 11pt;
+  font-family: "Ubuntu", san-serif;
+      }
+
+      label {
+        width: 30%;
+        padding: 5px;
+      }
+
+      label + input {
+        width: 50%;
+        padding: 5px;
+        margin: 0 10% 0 4%;
+      }
+
+      fieldset {
+        margin: 10px; padding:10px; auto;
+      }
+
+      #container, #appsResults, #suggestion{
+        width: 550px;
+        height:auto;
+        margin:10px auto;
+        padding:10px;
+        background-color: rgba(255, 255, 255, 0.85);
+        box-shadow: 5px 5px 5px #888888;
+        float:auto;
+        clear:auto;
+        color:#333;
+        font-size:1em;
+      }
+      .back{
+        margin-left:5%;
+        height: 40px;
+        cursor:pointer;
+      }
+      #apps{
+        margin-left:5%;
+        width:auto;
+        height:45px;
+        cursor:pointer;
+      }
+}
+
+@media (min-width: 960px){
+      label, input {
+        display: inline-block;
+        font-size: 11pt;
+  font-family: "Ubuntu", san-serif;
+      }
+
+      label {
+        width: 30%;
+        padding: 5px;
+      }
+
+      label + input {
+        width: 50%;
+        padding: 5px;
+        margin: 0 10% 0 4%;
+      }
+
+      fieldset {
+        margin: 10px; padding:10px; auto;
+      }
+      .check #submit{
+        display:inline-block;
+
+      }
+      .back{
+        margin-top: 2px;
+        margin-left:10px;
+        height: 50px;
+        cursor:pointer;
+
+      }
+      #apps{
+        margin-left:10%;
+        width:auto;
+        height:50px;
+        cursor:pointer;
+      }
+      #container, #appsResults, #suggestion{
+        width: 750px;
+        height:auto;
+        margin:10px auto;
+        padding:10px;
+        background-color: rgba(255, 255, 255, 0.85);
+        box-shadow: 5px 5px 5px #888888;
+        float:auto;
+        clear:auto;
+        color:#333;
+      }
+}
